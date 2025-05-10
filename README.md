@@ -1,30 +1,46 @@
-metadeps lets you write `pkg-config` dependencies in `Cargo.toml` metadata,
-rather than programmatically in `build.rs`.  This makes those dependencies
-declarative, so other tools can read them as well.
-
-# Usage
-
-In your `Cargo.toml`, add the following to your `[build-dependencies]`:
-
-```toml
-metadeps = "1.1"
-```
-
-Then, to declare a dependency on `testlib >= 1.2`, and a conditional dependency
-on `testdata >= 4.5`, add the following section:
-
-```toml
-[package.metadata.pkg-config]
-testlib = "1.2"
-testdata = { version = "4.5", feature = "use-testdata" }
-```
-
-In your `build.rs`, add:
-
-```rust
-extern crate metadeps;
-
-fn main() {
-    metadeps::probe().unwrap();
-}
-```
+<h1 align="center">
+    <img src="https://img.shields.io/badge/metadeps-🎯-blueviolet?style=for-the-badge" alt="Repo Badge">
+  </h1>
+  
+  <p align="center">
+    <img src="https://avatars.githubusercontent.com/u/121193249?v=4" width="100" style="border-radius:50%;">
+  </p>
+  
+  ---
+  
+  ## 📖 About the Project
+  - **Repository Name:** metadeps
+  - **Owner:** KanishkChhajed
+  - **Visibility:** public
+  - **Primary Language(s):** Rust
+  
+  ---
+  
+  ## 📊 Stats
+  
+  | Stars | Forks | Watchers | Open Issues | Closed Issues |
+  |:----:|:-----:|:--------:|:-----------:|:-------------:|
+  | 0 | 0 | 0 | 0 | 0 |
+  
+  ---
+  
+  ## 📢 Last Commit
+  
+  > "Adding my workflow for  testing"
+  
+  ---
+  
+  ## 🤝 Contributors
+  
+  
+  - [`joshtriplett`](#)
+  
+  - [`KanishkChhajed`](#)
+  
+  - [`est31`](#)
+  
+  
+  ---
+  
+  > *Generated with ❤️ by an automated GitHub Action* 🚀
+  
